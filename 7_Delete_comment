@@ -1,0 +1,1 @@
+SELECT * FROM comment WHERE target_table='blog' AND target_id=5 AND user_id=2;
