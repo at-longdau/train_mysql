@@ -1,0 +1,2 @@
+INSERT INTO category(title,description)
+VALUES ('Nguyen van cuong', 'Sinh vien dai hoc');
