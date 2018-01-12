@@ -1,0 +1,6 @@
+
+17. Select 10 blog mới nhất được tạo bởi các user active
+
+SELECT * from blog AS b join user AS u
+         on b.user_id = u.id WHERE u.is_active=1
+         order by b.id DESC LIMIT 10;
