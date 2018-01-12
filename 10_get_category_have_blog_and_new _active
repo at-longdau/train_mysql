@@ -1,0 +1,4 @@
+SELECT DISTINCT cate.id, cate.title FROM category AS cate 
+  INNER JOIN blog AS b ON cate.id = b.category_id
+  LEFT JOIN news AS n ON cate.id = n.category_id 
+  WHERE b.is_active > 0 OR n.is_active > 0
