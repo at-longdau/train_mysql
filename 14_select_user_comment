@@ -1,0 +1,7 @@
+
+14. Lấy 3 User comment đầu tiên trong 5 blogs mới nhất
+
+SELECT * from user inner join(SELECT user_id, created_at from comment where target_table = 'blog' order by created_at desc limit 5)  
+  as Lastest_comment
+  on Lastest_comment.user_id = user.id
+  limit 3
